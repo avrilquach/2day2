@@ -1,0 +1,39 @@
+section.heading2.pad30_0
+  .container
+    .row
+      .col-lg-12
+        h2 
+          span Video
+    .row.padtp30_0
+      // Carousel Wrapper
+      #carousel-thumb.carousel.slide.carousel-fade.carousel-thumbnails(data-ride='carousel').main-video
+        // Slides
+        .carousel-inner(role='listbox')
+          .carousel-item.active
+            img.d-block.w-100(src='img/spa/img2.jpg', alt='First slide')
+            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+              i.far.fa-play-circle
+          .carousel-item
+            img.d-block.w-100(src='img/spa/img2.jpg', alt='Second slide')
+            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+              i.far.fa-play-circle
+          .carousel-item
+            img.d-block.w-100(src='img/spa/img2.jpg', alt='Third slide')
+            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+              i.far.fa-play-circle
+        // /.Slides
+        ol.carousel-indicators
+          li.active(data-target='#carousel-thumb', data-slide-to='0')
+            img.d-block.w-100(src='img/spa/img3.jpg')
+          li(data-target='#carousel-thumb', data-slide-to='1')
+            img.d-block.w-100(src='img/spa/img3.jpg')
+          li(data-target='#carousel-thumb', data-slide-to='2')
+            img.d-block.w-100(src='img/spa/img3.jpg')
+          // Controls
+          a._prev(href='#carousel-thumb', role='button', data-slide='prev')
+            i.fa.fa-arrow-left
+          a._next(href='#carousel-thumb', role='button', data-slide='next')
+            i.fa.fa-arrow-right
+          // /.Controls
+          
+      // /.Carousel Wrapper
