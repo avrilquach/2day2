@@ -3,4 +3,30 @@ html
   include inc/head.jade
   body
     include inc/header.jade
+    .page_videos
+      include inc/video.jade
+      section.video_sec.pad15_0
+        .container
+          .row
+            -for(i=0;i<2;i++)
+              .col-lg-6
+                .item
+                  .img
+                    img(src='img/2day/img2.jpg', alt='')
+                    a.popup-youtube(href='#')
+                      img(src='img/2day/icon.png',alt='')
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+      section.video_sec.pad15_0
+        .container
+          .row
+            -for(i=0;i<4;i++)
+              .col-lg-3
+                a.item(href="#")
+                  .img.hover-img2.animated
+                    img(src='img/2day/img1.jpg', alt='')
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                 
+
     include inc/footer.jade
+    include inc/script2.jade

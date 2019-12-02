@@ -1,39 +1,23 @@
-section.heading2.pad30_0
+// Video
+section.video_sec.pad15_0
   .container
     .row
-      .col-lg-12
-        h2 
-          span Video
-    .row.padtp30_0
-      // Carousel Wrapper
-      #carousel-thumb.carousel.slide.carousel-fade.carousel-thumbnails(data-ride='carousel').main-video
-        // Slides
-        .carousel-inner(role='listbox')
-          .carousel-item.active
-            img.d-block.w-100(src='img/spa/img2.jpg', alt='First slide')
-            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-              i.far.fa-play-circle
-          .carousel-item
-            img.d-block.w-100(src='img/spa/img2.jpg', alt='Second slide')
-            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-              i.far.fa-play-circle
-          .carousel-item
-            img.d-block.w-100(src='img/spa/img2.jpg', alt='Third slide')
-            a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-              i.far.fa-play-circle
-        // /.Slides
-        ol.carousel-indicators
-          li.active(data-target='#carousel-thumb', data-slide-to='0')
-            img.d-block.w-100(src='img/spa/img3.jpg')
-          li(data-target='#carousel-thumb', data-slide-to='1')
-            img.d-block.w-100(src='img/spa/img3.jpg')
-          li(data-target='#carousel-thumb', data-slide-to='2')
-            img.d-block.w-100(src='img/spa/img3.jpg')
-          // Controls
-          a._prev(href='#carousel-thumb', role='button', data-slide='prev')
-            i.fa.fa-arrow-left
-          a._next(href='#carousel-thumb', role='button', data-slide='next')
-            i.fa.fa-arrow-right
-          // /.Controls
+      .col-lg-8
+        .owl-carousel.owl-theme.main_videos
+          -for(i=0;i<4;i++)
+            .item._style 
+              .img
+                img(src='img/2day/img3.jpg', alt='')
+                a.popup-youtube(href='#')
+                  img(src='img/2day/icon.png',alt='')
+              .caption 
+                h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+                p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có chữ ký của toàn bộ 
+      .col-lg-4
+        -for(i=0;i<2;i++)
+          a.item(href="#")._style
+            .img
+              img(src='img/2day/img4.jpg', alt='')
+            .caption
+              h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
           
-      // /.Carousel Wrapper

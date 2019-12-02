@@ -2,75 +2,92 @@
 header#header
   .nav-top
     .container
-      .row.align-items-center
+      .row.align-items-center.justify-content-between 
         .col-lg-6
+          .social-left 
+            ul
+              li 
+                a(href="#")
+                  i.fab.fa-facebook-f
+              li 
+                a(href="#")
+                  i.fab.fa-google-plus-g
+              li 
+                a(href="#")
+                  i.fab.fa-instagram
+              li 
+                a(href="#")
+                  i.fab.fa-twitter
+              li 
+                a(href="#")
+                  i.fab.fa-youtube
         .col-lg-6
-          .lg-right.float-right
+          .lg-right
+            form.search
+              input(type='search', placeholder='Bạn cần tìm gì hôm nay ?')
+              input(type='submit', value='')
+              i.fa.fa-search
             ul
               li
                 a(href='#')
+                  | Đăng ký
+              li /
+              li
+                a(href='#')
                   | Đăng nhập
-                  img(src='img/icon.png', alt='')
   .main-nav
     .container
-      .row.align-items-center
-        .col-lg-3.col-md-12.col-xs-12
+      .row.align-items-center.justify-content-between
+        .col-lg-2
           a(href='/')
-            img(src='img/logo.jpg', alt='')
-        .col-lg-5
-          form.search
-            input(type='search', placeholder='Bạn cần tìm gì hôm nay ?')
-            input(type='submit', value='')
-            i.fa.fa-search
-        .col-lg-4
-          .nav-it_rh.float-right
-            a.hotline(href='tel:08888 45 999')
-              img(src='img/icon.jpg', alt='')
-              span 08888 45 999
-            a.cart(href='#')
-              img(src='img/cart.jpg', alt='')
-              span 5
-     
+            img(src='img/2day/logo.jpg', alt='')
+        .col-lg-10
+          .banner_ads
+            .first
+              img(src='img/2day/ads1.jpg',alt='')
+            .last
+              img(src='img/2day/ads2.jpg',alt='')
   .menu
     .container
       .row
-        ul
-          li
-            a(href='#')
-              | star	    	     	     	     	     	     	     	     	          	     	     
-          li
-            a(href='#')
-              | TV
-          li
-            a(href='#')
-              | Show
-          li
-            a(href='#')
-              | Ciné
-          li
-            a(href='#')
-              | Musik
-          li
-            a(href='#')
-              | Beauty & Fashion
-          li
-            a(href='#')
-              | Đời sống
-          li
-            a(href='#')
-              | Du lịch
-          li
-            a(href='#')
-              | Xã hội
-          li
-            a(href='#')
-              | Thế giới
-          li
-            a(href='#')
-              | Sport
-          li
-            a(href='#')
-              | Học đường
-          li
-            a(href='#')
-              | Video
+        .col-lg-12 
+          ul
+            li
+              a(href='#')
+                | star	    	     	     	     	     	     	     	     	          	     	     
+            li
+              a(href='#')
+                | TV
+            li
+              a(href='#')
+                | Show
+            li
+              a(href='#')
+                | Ciné
+            li
+              a(href='#')
+                | Musik
+            li
+              a(href='#')
+                | Beauty & Fashion
+            li
+              a(href='#')
+                | Đời sống
+            li
+              a(href='#')
+                | Du lịch
+            li
+              a(href='#')
+                | Xã hội
+            li
+              a(href='#')
+                | Thế giới
+            li
+              a(href='#')
+                | Sport
+            li
+              a(href='#')
+                | Học đường
+            li
+              a(href='#')
+                | Video
