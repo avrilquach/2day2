@@ -35,9 +35,6 @@ a
 img
   max-width: 100%
 
-.pad30_0
-  padding: 30px 0
-
 .padtp30_0
   padding: 30px 0 0 0
 
@@ -46,6 +43,9 @@ img
 
 .padtp50_0
   padding: 50px 0 0 0
+
+.padbt0_10
+  padding: 0 0 10px 0
 
 .padbt0_20
   padding: 0 0 20px 0
@@ -59,8 +59,14 @@ img
 .pad30_50
   padding: 30px 0 50px 0
 
+.pad10_0
+  padding: 10px 0
+
 .pad15_0
   padding: 15px 0
+
+.pad30_0
+  padding: 30px 0
 
 .pad50_0
   padding: 50px 0
@@ -339,6 +345,7 @@ section
         position: absolute
 
   &.breadcrumbs
+    background: #f3f3f3
     ul
       display: -webkit-box
       display: -ms-flexbox
@@ -351,10 +358,13 @@ section
       li
         a
           color: #636363
+          font-size: 16px
+          i
+            margin: 0 10px 0 0
 
         &::after
-          content: "/"
-          padding: 0 5px
+          content: "-"
+          padding: 0 10px
 
         &:last-child::after
           display: none
@@ -2844,16 +2854,44 @@ section
         color: #b1b1b1
 
 footer
+  .footer-logo
+    margin: 0 0 20px 0
   .footer-bottom
     ._style
       padding: 0 20px 0 0
-      ul 
+      &:nth-child(1)
+        width: 20%
+      &:nth-child(2)
+        width: 30%
+      &:nth-child(3)
+        width: 50% 
+      li
+        padding: 0 0 10px 0
         list-style: disc
-        li
-          padding: 5px 0    
+        list-style-position: inside    
         a
           color: #000
           font-size: 16px
+      p
+        font-size: 16px
+        color: #000
+        margin: 0 0 20px 0
+    ._style_1
+      padding: 0 20px 0 0
+      p
+        font-size: 16px
+        color: #000
+        margin: 0 0 20px 0
+    ul.social
+      display: flex
+      dipslay: -webkit-flex
+      align-items: center
+      li
+        margin: 0 20px 0 0
+        a
+          i
+            font-size: 23px
+            color: #000
 
   .footer-copyright
     text-align: center
@@ -3137,11 +3175,9 @@ footer
 .page_videos
   .main_videos
     height: 100%
-    .item
-    
+    .item 
       h3
         font-size: 30px
-
   .video_sec
     clear: both
     .col-lg-8
@@ -3175,7 +3211,7 @@ footer
       background: rgba(0,0,0,0.5)
       width: 100%
       padding: 10px
-      h3, p
+      h3, p, span
         color: #fff
     .img
       position: relative
@@ -3214,7 +3250,8 @@ footer
      margin: 0 0 10px 0
     span
       font-size: 14px
-      font-style: italic
+      span.date
+        font-style: italic
   .owl-nav
       position: absolute
       top: 
@@ -3330,6 +3367,33 @@ footer
       li
         margin: 0 10px 
 
-
-
+#loaddata
+  ._item_
+    display: flex
+    display: -webkit-flex
+    border-bottom: 1px solid #ccc
+    padding: 30px 0
+    .img
+      margin: 0 30px 0 0
+      img
+        width: 370px
+        border: 1px solid #ccc
+    .text
+      width: calc(100% - 400px)
+      h4
+        a
+          color: #000
+          font-size: 30px
+          font-weight: bold
+        margin: 0 0 10px 0
+      p
+        font-size: 20px
+        color: #000
+        margin: 0 0 10px 0
+      span
+        font-size: 16px
+        span.date
+          font-style: italic
+  .loading
+    text-align: center
         
