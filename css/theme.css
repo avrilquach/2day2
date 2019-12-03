@@ -2515,26 +2515,15 @@ section.contact #form-contact input[type='submit'] {
         font-size: 30px;
         color: #b1b1b1; }
 
-footer .footer-bottom h4 {
-  color: #4f4f4f;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  padding: 0 0 20px 0; }
-  footer .footer-bottom h4::after {
-    content: "";
-    position: absolute;
-    width: 83px;
-    height: 1px;
-    background: #b7b7b7;
-    bottom: 10px;
-    left: 0; }
-
-footer .footer-bottom ul li {
-  padding: 5px 0; }
-  footer .footer-bottom ul li a {
-    color: #4f4f4f; }
+footer .footer-bottom ._style {
+  padding: 0 20px 0 0; }
+  footer .footer-bottom ._style ul {
+    list-style: disc; }
+    footer .footer-bottom ._style ul li {
+      padding: 5px 0; }
+    footer .footer-bottom ._style ul a {
+      color: #000;
+      font-size: 16px; }
 
 footer .footer-copyright {
   text-align: center;
