@@ -20,7 +20,7 @@ html
       section.video_list
         .container
           .row
-            .col-lg-9#loaddata
+            .col-lg-9#loaddata.loadnews
               -for(i=0;i<5;i++)
                 ._item_
                   .img
@@ -35,7 +35,7 @@ html
                       span.date 1 giờ trước
               .loading.pad30_0 Loading...
             .col-lg-3 
-              img(src='img/2day/img6.jpg',alt='')
+              img(src='img/2day/img6.jpg',alt='').padtp30_0
               .box_news_specical.pad30_0
                 h2 tin nổi bật
                 -for(i=0;i<5;i++)
@@ -47,8 +47,6 @@ html
                         a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing...
                       span Đời sống 
                         span.date - 1 ngày trước 
-
-
-
+          
     include inc/footer.jade
     include inc/script2.jade

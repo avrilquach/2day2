@@ -266,7 +266,7 @@ $(document).ready(function() {
 		for (i = 0; i < 1; i++) {
 			html += "<div class='_item_'> <div class='img'><img src='img/2day/img1.jpg' alt=''></div> <div class='text'> <h4> <a href='#'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ......</p><span>Bởi <strong>Amin  </strong>-  <span class='date'>1 giờ trước</span></span> </div> </div>";
 		}
-		$('#loaddata').append(html);
+		$('.loadnews').append(html);
 	}
 	$("a[href='#top']").click(function() {
 			$("html, body").animate({
