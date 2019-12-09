@@ -1,0 +1,47 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    // Breadcrumbs
+    section.breadcrumbs.pad10_0
+      .container
+        .row
+          .col-lg-12
+            ul
+              li
+                a(href='#') 
+                    i.fas.fa-home
+                    | Trang chủ
+              li
+                a(href='#') Video
+              li
+                a(href='#') Cuộc sống
+              li
+                a(href='#') Title 
+    section.video_detail.pad15_0
+        .container
+          .row
+            .col-lg-9
+              ._content
+                img(src='img/2day/Video_Detail_1.jpg',alt='')
+            .col-lg-3
+              .sidebar
+                h2 VIDEO HOT NHẤT 
+                ._item_
+                  .img
+                    img(src='img/2day/img7.jpg', alt='')
+                    .popup-youtube
+                      img(src='img/2day/icon.png',alt='')
+                  .text
+                    h4
+                      a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing...
+                    span
+                      | Đời sống 
+                      span.date - 1 ngày trước 
+ 
+
+
+        
+    include inc/footer.jade
+    include inc/script2.jade

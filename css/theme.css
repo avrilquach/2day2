@@ -532,14 +532,44 @@ footer {
   height: 550px;
   display: block;
   position: relative;
-  background-position: top center; }
+  background-position: top center;
+  margin: 0; }
+  .page_videos .main-banner .item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    width: 100%;
+    height: 100%; }
+  .page_videos .main-banner .item .caption_ {
+    position: absolute;
+    top: 35%;
+    left: 200px; }
+    .page_videos .main-banner .item .caption_ h1 {
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold; }
+    .page_videos .main-banner .item .caption_ h2 {
+      font-size: 30px;
+      color: #fff;
+      margin: 0 0 10px 0; }
+    .page_videos .main-banner .item .caption_ p {
+      font-size: 16px;
+      color: #fff; }
+  .page_videos .main-banner .item .popup-youtube_ {
+    width: 10%;
+    position: absolute;
+    right: 200px;
+    top: 35%; }
 
 .page_videos .main-banner .owl-nav {
   position: absolute;
   top: 45%;
   width: 100%; }
   .page_videos .main-banner .owl-nav i {
-    color: #6b6b6b;
+    color: #fff;
     font-size: 40px; }
   .page_videos .main-banner .owl-nav .owl-prev {
     left: 50px;
@@ -566,16 +596,28 @@ footer {
   -ms-flex-pack: center;
   justify-content: center; }
   .page_videos .main-banner .owl-dots .owl-dot {
-    margin: 0 5px 0 0; }
+    margin: 0 10px 0 0; }
     .page_videos .main-banner .owl-dots .owl-dot:last-child {
       margin: 0; }
     .page_videos .main-banner .owl-dots .owl-dot.active span {
-      background-color: #0f890e; }
+      position: relative; }
+      .page_videos .main-banner .owl-dots .owl-dot.active span::before {
+        content: "";
+        background-color: transparent;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #fff;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: -3px;
+        top: -3px; }
     .page_videos .main-banner .owl-dots .owl-dot span {
-      height: 6px;
-      width: 30px;
-      background-color: #4f4f4f;
-      display: block; }
+      height: 10px;
+      width: 10px;
+      background-color: #fff;
+      display: block;
+      border-radius: 50%; }
 
 .list_category h2 {
   border-bottom: 1px solid #b7b7b7;
