@@ -1,0 +1,39 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    // Breadcrumbs
+    section.breadcrumbs.pad10_0
+      .container
+        .row
+          .col-lg-12
+            ul
+              li
+                a(href='#') 
+                    i.fas.fa-home
+                    | Trang chủ
+              li
+                a(href='#') Video
+              li
+                a(href='#') Cuộc sống 
+
+    .page_videos.video_category
+      include inc/banner.jade
+      // Video
+      section.video_sec.pad15_0
+        .container
+          .row
+            -for(i=0;i<9;i++)
+              .col-lg-4
+                .item._style_1 
+                  .img
+                    img(src='img/2day/img2.jpg', alt='')
+                    a.popup-youtube(href='#')
+                      img(src='img/2day/icon.png',alt='')
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  span 15k view 
+                    span.date -  Cách đây 4 tháng
+      
+    include inc/footer.jade
+    include inc/script2.jade

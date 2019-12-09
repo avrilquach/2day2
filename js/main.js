@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	var banner = $('.main-banner');
+	banner.owlCarousel({
+			loop: true,
+			nav: false,
+			dots: true,
+			items: 1,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			autoplay: true,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeInLeft',
+			smartSpeed: 200
+	});
 	var _video = $('.main_videos');
 	_video.owlCarousel({
 			loop: true,

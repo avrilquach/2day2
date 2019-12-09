@@ -333,6 +333,9 @@ footer {
     text-align: center;
     background: #efefef; }
 
+.page_videos.video_category .item {
+  margin: 0 0 30px 0; }
+
 .page_videos .main_videos {
   height: 100%; }
   .page_videos .main_videos .item h3 {
@@ -498,15 +501,15 @@ footer {
     .page_videos .item span span.date {
       font-style: italic; }
 
-.page_videos .owl-nav {
+.page_videos .main_videos .owl-nav {
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 5; }
-  .page_videos .owl-nav i {
+  .page_videos .main_videos .owl-nav i {
     color: #fff;
     font-size: 30px; }
-  .page_videos .owl-nav .owl-prev {
+  .page_videos .main_videos .owl-nav .owl-prev {
     right: 60px;
     position: absolute;
     z-index: 5;
@@ -515,7 +518,7 @@ footer {
     height: 32px;
     background: #b7b7b7;
     text-align: center; }
-  .page_videos .owl-nav .owl-next {
+  .page_videos .main_videos .owl-nav .owl-next {
     right: 0;
     position: absolute;
     z-index: 5;
@@ -524,6 +527,55 @@ footer {
     width: 48px;
     height: 32px;
     text-align: center; }
+
+.page_videos .main-banner .item {
+  height: 550px;
+  display: block;
+  position: relative;
+  background-position: top center; }
+
+.page_videos .main-banner .owl-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%; }
+  .page_videos .main-banner .owl-nav i {
+    color: #6b6b6b;
+    font-size: 40px; }
+  .page_videos .main-banner .owl-nav .owl-prev {
+    left: 50px;
+    position: absolute; }
+  .page_videos .main-banner .owl-nav .owl-next {
+    right: 50px;
+    position: absolute; }
+
+.page_videos .main-banner .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .page_videos .main-banner .owl-dots .owl-dot {
+    margin: 0 5px 0 0; }
+    .page_videos .main-banner .owl-dots .owl-dot:last-child {
+      margin: 0; }
+    .page_videos .main-banner .owl-dots .owl-dot.active span {
+      background-color: #0f890e; }
+    .page_videos .main-banner .owl-dots .owl-dot span {
+      height: 6px;
+      width: 30px;
+      background-color: #4f4f4f;
+      display: block; }
 
 .list_category h2 {
   border-bottom: 1px solid #b7b7b7;
