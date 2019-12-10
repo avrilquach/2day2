@@ -2,4 +2,32 @@ doctype html
 html
   include inc/head.jade
   body
-    
+    .box_login_register_.pad100_0
+      .container
+        .row
+          ul.nav.nav-pills.pad10_0
+            li
+              a(href="#login" data-toggle="tab").active Đăng nhập
+            li
+              a(href="#register" data-toggle="tab") Đăng ký
+          .tab-content.pad50_100
+            .tab-pane#login.active
+              form
+                input(type="text" name="name" placeholder="Tên đăng nhập(*)").form_text 
+                input(type='password' name='password' placeholder="Mật khẩu(*)").form_text
+                .middle_.row.align-items-center.justify-content-between 
+                  .remember_pass
+                    input(type="checkbox")
+                    | Nhớ mật khẩu 
+                  .forget_pass
+                    a(href="#") Quên mật khẩu?
+                .bottom_.row.align-items-center.justify-content-between 
+                  input(type='submit' value="Đăng nhập")
+                  span Hoặc
+                  .social_
+                    a(href="#")#login_fb
+                      img(src="img/2day/btn_fb.jpg",alt='')
+                    a(href="#")#login_gg
+                      img(src="img/2day/btn_gg.jpg",alt='')
+            .tab-pane#register
+    include inc/script.jade
