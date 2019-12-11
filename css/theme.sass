@@ -450,6 +450,17 @@ footer
             margin: 0
             img
               height: 100%
+    ul.list_
+      li
+        padding: 30px 0
+        list-style: square
+        list-style-position: inside
+        border-bottom: 1px solid #424242
+        &:last-child
+          border-bottom: none
+        a
+          font-size: 16px
+          color: #424242
   .item
     position: relative
     &._style
@@ -929,110 +940,17 @@ section.banner_ads
       -ms-flex-pack: justify
       justify-content: space-between
 
-  .box-buy
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-
-    .img
-      padding: 0 20px 0 0
-      width: 140px
-      position: relative
-
-      img
-        display: block
-        margin: 0 auto
-
-      span.sticker
-        padding: 0 5px
-        color: #fff
-        position: absolute
-        top: 15px
-        left: 15px
-        text-transform: uppercase
-        z-index: 5
-        background: #0f890e
-
-    .description
-      padding: 0 20px 0 0
-      width: 400px
-
-      span.title
-        font-size: 20px
-        color: #434343
-        font-weight: bold
-        margin: 0 0 5px 0
-        display: block
-
-      ul li
-        color: #434343
-        list-style: disc
-        list-style-position: inside
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-
-        img, strong
-          margin: 0 0 0 10px
-
-    .box-detail
-      width: 180px
-
-      span
-        &.price
-          font-size: 20px
-          color: #ed2891
-          font-weight: bold
-          display: block
-
-        &.promotions
-          font-size: 14px
-          color: #434343
-          display: block
-
-        &.options
-          color: #0f8905
-          margin: 0 0 10px 0
-          display: block
-
-          .review
-            margin: 0 5px 0 0
-
-      a
-        &.buy_product
-          display: block
-          width: 180px
-          height: 45px
-          background: #ff6c00
-          border-radius: 5px
-          font-size: 15px
-          text-align: center
-          line-height: 45px
-          color: #fff
-          text-transform: uppercase
-          font-weight: bold
-          margin: 0 0 10px 0
-
-        &.add_to_cart
-          display: block
-          width: 180px
-          height: 45px
-          background: #6e6e6e
-          border-radius: 5px
-          font-size: 15px
-          text-align: center
-          line-height: 45px
-          color: #fff
-          text-transform: uppercase
-          font-weight: bold
+ 
+  .detail + .video_sec
+    margin: 0 -15px
+    h2
+      font-size: 40px
+      background: #fff
+      &::after
+        right: 0
+        width:  calc( 100% - 300px)
+        margin: 0
+        top: 30px
 .comments-area
   .replay_comment .l
     margin: 0 0 20px 0
@@ -1128,5 +1046,27 @@ section.banner_ads
         border-right: 1px solid #000
         margin: 0 10px 0 0
         padding: 0 10px 0 0
-    
-  
+.comments-review
+  .comments
+    width: 100%
+    border: none
+    height: 100px
+    outline: none
+    padding: 20px
+    border: 1px solid #000
+  p
+    font-size: 16px
+    a
+      font-weight: bold
+      color: #000
+  span
+    &.submit
+      input[type="submit"]
+        width: 105px
+        height: 48px
+        background: #01c3ff
+        text-align: center
+        border: none
+        color: #fff
+        text-transform: uppercase   
+        font-size: 25px

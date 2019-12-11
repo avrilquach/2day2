@@ -4,11 +4,11 @@ html
   body
     include inc/header.jade
     include inc/breadcrumb.jade
-    section.newsdetail-page.pad30_0
+    section.newsdetail-page.pad30_0.page_videos
       .container
         .row
           .col-lg-9
-            .detail.padbt0_30
+            .detail
               h1
                 | 5 Essential Rules to a Healthy and Happy Life
               // Details
@@ -23,44 +23,35 @@ html
                   -for(i=0;i<3;i++)
                     li
                       a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
-              .ctent_detail.pad30_0
+              .ctent_detail
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
                 p
                   img.lazy(alt='', src='img/2day/detail.jpg')
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
-            section.bai-viet-lien-quan
+            // Video
+            section.video_sec.pad15_0
               .row
                 .col-lg-12
-                  .head
-                    h3 Tin liên quan
-                    i.line
+                  h2._top-head.padbt0_30 Tin liên quan
               .row
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
-                .col-lg-4.col-md-6
-                  a.item(href='#')
-                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
-                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                -for(i=0;i<4;i++)
+                  .col-lg-3
+                    a.item(href="#")
+                      .img.hover-img2.animated
+                        img(src='img/2day/img1.jpg', alt='')
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              .row
+                -for(i=0;i<2;i++)
+                  .col-lg-6
+                    ul.list_
+                      li
+                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                      li
+                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                      li
+                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
 
             .box-comments
               span.count Ý kiến bạn đọc (107)
@@ -106,7 +97,16 @@ html
                                 i.fas.fa-chevron-down                  
                           .msg
                             p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
-                                
+            form.comments-review
+              textarea.comments(name='comments' placeholder='Ý kiến của bạn ')
+              .row.pad15_0.align-items-center.justify-content-between 
+                p Hãy 
+                  a(href="#") Đăng Nhập 
+                  | hoặc 
+                  a(href="#") Tạo Tài Khoản 
+                  | để gửi bình luận
+                span.submit
+                  input(type='submit', value='Gửi')       
           .col-lg-3 
             img(src='img/2day/img6.jpg',alt='').padtp30_0
             .box_news_specical.pad30_0

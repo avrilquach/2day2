@@ -449,6 +449,16 @@ footer {
         margin: 0; }
         .page_videos .video_sec .col-lg-4.video_home .item .img img {
           height: 100%; }
+  .page_videos .video_sec ul.list_ li {
+    padding: 30px 0;
+    list-style: square;
+    list-style-position: inside;
+    border-bottom: 1px solid #424242; }
+    .page_videos .video_sec ul.list_ li:last-child {
+      border-bottom: none; }
+    .page_videos .video_sec ul.list_ li a {
+      font-size: 16px;
+      color: #424242; }
 
 .page_videos .item {
   position: relative; }
@@ -942,94 +952,16 @@ section.banner_ads img {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.newsdetail-page .box-buy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .newsdetail-page .box-buy .img {
-    padding: 0 20px 0 0;
-    width: 140px;
-    position: relative; }
-    .newsdetail-page .box-buy .img img {
-      display: block;
-      margin: 0 auto; }
-    .newsdetail-page .box-buy .img span.sticker {
-      padding: 0 5px;
-      color: #fff;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      text-transform: uppercase;
-      z-index: 5;
-      background: #0f890e; }
-  .newsdetail-page .box-buy .description {
-    padding: 0 20px 0 0;
-    width: 400px; }
-    .newsdetail-page .box-buy .description span.title {
-      font-size: 20px;
-      color: #434343;
-      font-weight: bold;
-      margin: 0 0 5px 0;
-      display: block; }
-    .newsdetail-page .box-buy .description ul li {
-      color: #434343;
-      list-style: disc;
-      list-style-position: inside;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      display: -webkit-flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .newsdetail-page .box-buy .description ul li img, .newsdetail-page .box-buy .description ul li strong {
-        margin: 0 0 0 10px; }
-  .newsdetail-page .box-buy .box-detail {
-    width: 180px; }
-    .newsdetail-page .box-buy .box-detail span.price {
-      font-size: 20px;
-      color: #ed2891;
-      font-weight: bold;
-      display: block; }
-    .newsdetail-page .box-buy .box-detail span.promotions {
-      font-size: 14px;
-      color: #434343;
-      display: block; }
-    .newsdetail-page .box-buy .box-detail span.options {
-      color: #0f8905;
-      margin: 0 0 10px 0;
-      display: block; }
-      .newsdetail-page .box-buy .box-detail span.options .review {
-        margin: 0 5px 0 0; }
-    .newsdetail-page .box-buy .box-detail a.buy_product {
-      display: block;
-      width: 180px;
-      height: 45px;
-      background: #ff6c00;
-      border-radius: 5px;
-      font-size: 15px;
-      text-align: center;
-      line-height: 45px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 0 0 10px 0; }
-    .newsdetail-page .box-buy .box-detail a.add_to_cart {
-      display: block;
-      width: 180px;
-      height: 45px;
-      background: #6e6e6e;
-      border-radius: 5px;
-      font-size: 15px;
-      text-align: center;
-      line-height: 45px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: bold; }
+.newsdetail-page .detail + .video_sec {
+  margin: 0 -15px; }
+  .newsdetail-page .detail + .video_sec h2 {
+    font-size: 40px;
+    background: #fff; }
+    .newsdetail-page .detail + .video_sec h2::after {
+      right: 0;
+      width: calc( 100% - 300px);
+      margin: 0;
+      top: 30px; }
 
 .comments-area .replay_comment .l {
   margin: 0 0 20px 0;
@@ -1137,3 +1069,27 @@ section.banner_ads img {
       border-right: 1px solid #000;
       margin: 0 10px 0 0;
       padding: 0 10px 0 0; }
+
+.comments-review .comments {
+  width: 100%;
+  border: none;
+  height: 100px;
+  outline: none;
+  padding: 20px;
+  border: 1px solid #000; }
+
+.comments-review p {
+  font-size: 16px; }
+  .comments-review p a {
+    font-weight: bold;
+    color: #000; }
+
+.comments-review span.submit input[type="submit"] {
+  width: 105px;
+  height: 48px;
+  background: #01c3ff;
+  text-align: center;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px; }
