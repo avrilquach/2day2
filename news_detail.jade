@@ -4,25 +4,102 @@ html
   body
     include inc/header.jade
     include inc/breadcrumb.jade
-    .page_videos 
-      section.video_list
-        .container
-          .row
-            .col-lg-9
-              
-            .col-lg-3 
-              img(src='img/2day/img6.jpg',alt='').padtp30_0
-              .box_news_specical.pad30_0
-                h2 tin nổi bật
-                -for(i=0;i<5;i++)
-                  ._item_
-                    .img
-                      img(src='img/2day/img7.jpg',alt='')
-                    .text
-                      h4
-                        a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing...
-                      span Đời sống 
-                        span.date - 1 ngày trước 
+    section.newsdetail-page.pad30_0
+      .container
+        .row
+          .col-lg-9
+            .detail.padbt0_30
+              h1
+                | 5 Essential Rules to a Healthy and Happy Life
+              // Details
+              .head
+                .text
+                  span.date Admin - 
+                    span 20/12/2018
+                  span.social
+                    img(src='img/like.jpg')
+              .xem-nhanh
+                ul
+                  -for(i=0;i<3;i++)
+                    li
+                      a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+              .ctent_detail.pad30_0
+                p
+                  | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+                p
+                  img.lazy(alt='', src='img/2day/detail.jpg')
+                p
+                  | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+            #comments.comments-area
+              .replay_comment
+                -for(i=0;i<2;i++)
+                  .l
+                    .name
+                      h5 Nguyễn Mạnh Linh
+                      .replay
+                        a(href='#') Trả lời
+                        a(href='#')
+                          i.fas.fa-thumbs-up
+                          | Thích
+                        .time Cách đây 5 giờ
+                    .content
+                      | - Sản phẩm này có gây tác dụng phụ gì không ạ? Công ty có thể hỗ trợ em không ạ ?
+                    .persion-replay
+                      i.arrow
+                      .pr
+                        .head
+                          i.fa.fa-user
+                          h5 Đẳng cấp phải đẹp
+                          span Quản trị viên
+                        .msg
+                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
+                        .replay
+                          a(href='#') Trả lời
+                          a(href='#')
+                            i.fas.fa-thumbs-up
+                            | Hài lòng
+                          a(href='#')
+                            i.far.fa-thumbs-down
+                            | Không hài lòng
+                          .time Cách đây 5 giờ
+                      .pr
+                        .head
+                          h5 Phúc
+                        .msg
+                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
+                        .replay
+                          a(href='#') Trả lời
+                          .time Cách đây 5 giờ
+                      .pr
+                        .head
+                          i.fa.fa-user
+                          h5 Đẳng cấp phải đẹp
+                          span Quản trị viên
+                        .msg
+                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
+                        .replay
+                          a(href='#') Trả lời
+                          a(href='#')
+                            i.fas.fa-thumbs-up
+                            | Hài lòng
+                          a(href='#')
+                            i.far.fa-thumbs-down
+                            | Không hài lòng
+                          .time Cách đây 5 giờ
+            
+          .col-lg-3 
+            img(src='img/2day/img6.jpg',alt='').padtp30_0
+            .box_news_specical.pad30_0
+              h2 tin nổi bật
+              -for(i=0;i<5;i++)
+                ._item_
+                  .img
+                    img(src='img/2day/img7.jpg',alt='')
+                  .text
+                    h4
+                      a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing...
+                    span Đời sống 
+                      span.date - 1 ngày trước 
           
     include inc/footer.jade
     include inc/script2.jade
