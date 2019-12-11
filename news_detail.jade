@@ -30,63 +30,83 @@ html
                   img.lazy(alt='', src='img/2day/detail.jpg')
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+            section.bai-viet-lien-quan
+              .row
+                .col-lg-12
+                  .head
+                    h3 Tin liên quan
+                    i.line
+              .row
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+                .col-lg-4.col-md-6
+                  a.item(href='#')
+                    h4 Học lỏm tuyệt chiêu làm săn chắc và trẻ hóa da của phụ nữ Ấn Độ
+                    img.hover-img.animated(src='img/newdetail.jpg', alt='')
+
+            .box-comments
+              span.count Ý kiến bạn đọc (107)
+              .search-ct
+                a(href="#") Quan tâm nhất
+                a(href="#") Mới nhất 
             #comments.comments-area
               .replay_comment
                 -for(i=0;i<2;i++)
                   .l
                     .name
-                      h5 Nguyễn Mạnh Linh
+                      ._left
+                        img(src='img/2day/avatar.jpg')
+                        h5 Nguyễn Mạnh Linh 
+                          span - 07:25 13/08
                       .replay
-                        a(href='#') Trả lời
-                        a(href='#')
+                        a(href='#').like
                           i.fas.fa-thumbs-up
-                          | Thích
-                        .time Cách đây 5 giờ
+                          |  200 Thích
+                        a(href='#').answer Trả lời
+                          i.fas.fa-flag
+                        a(href='#').share
+                          | Chia sẻ
+                          i.fas.fa-chevron-down                
                     .content
-                      | - Sản phẩm này có gây tác dụng phụ gì không ạ? Công ty có thể hỗ trợ em không ạ ?
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
                     .persion-replay
-                      i.arrow
-                      .pr
-                        .head
-                          i.fa.fa-user
-                          h5 Đẳng cấp phải đẹp
-                          span Quản trị viên
-                        .msg
-                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
-                        .replay
-                          a(href='#') Trả lời
-                          a(href='#')
-                            i.fas.fa-thumbs-up
-                            | Hài lòng
-                          a(href='#')
-                            i.far.fa-thumbs-down
-                            | Không hài lòng
-                          .time Cách đây 5 giờ
-                      .pr
-                        .head
-                          h5 Phúc
-                        .msg
-                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
-                        .replay
-                          a(href='#') Trả lời
-                          .time Cách đây 5 giờ
-                      .pr
-                        .head
-                          i.fa.fa-user
-                          h5 Đẳng cấp phải đẹp
-                          span Quản trị viên
-                        .msg
-                          p Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
-                        .replay
-                          a(href='#') Trả lời
-                          a(href='#')
-                            i.fas.fa-thumbs-up
-                            | Hài lòng
-                          a(href='#')
-                            i.far.fa-thumbs-down
-                            | Không hài lòng
-                          .time Cách đây 5 giờ
-            
+                      -for(y=0;y<3;y++)
+                        .pr
+                          .head
+                            ._left
+                              img(src='img/2day/avatar.jpg')
+                              h5 Nguyễn Mạnh Linh 
+                                span - 07:25 13/08
+                            .replay
+                              a(href='#').like
+                                i.fas.fa-thumbs-up
+                                |  200 Thích
+                              a(href='#').answer Trả lời
+                                i.fas.fa-flag
+                              a(href='#').share
+                                | Chia sẻ
+                                i.fas.fa-chevron-down                  
+                          .msg
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+                                
           .col-lg-3 
             img(src='img/2day/img6.jpg',alt='').padtp30_0
             .box_news_specical.pad30_0
@@ -100,6 +120,5 @@ html
                       a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing...
                     span Đời sống 
                       span.date - 1 ngày trước 
-          
     include inc/footer.jade
     include inc/script2.jade

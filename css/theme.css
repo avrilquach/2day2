@@ -1032,15 +1032,31 @@ section.banner_ads img {
       font-weight: bold; }
 
 .comments-area .replay_comment .l {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  border-bottom: 1px dashed #000; }
 
-.comments-area .name h5 {
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0 0 5px 0; }
+.comments-area .name, .comments-area .name ._left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .comments-area .name h5, .comments-area .name ._left h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 5px 0; }
+
+.comments-area .name {
+  margin: 0 0 10px 0; }
+  .comments-area .name ._left img {
+    margin: 0 10px 0 0; }
 
 .comments-area .replay {
-  margin: 5px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,31 +1064,37 @@ section.banner_ads img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .comments-area .replay .like i {
+    color: #01c3ff; }
   .comments-area .replay a {
     margin: 0 10px 0 0;
-    color: #288ad6; }
+    padding: 0 10px 0 0;
+    color: #288ad6;
+    border-right: 1px solid #000;
+    color: #004f8b; }
+    .comments-area .replay a:last-child {
+      border-right: none;
+      margin: 0;
+      padding: 0; }
     .comments-area .replay a i {
       color: #999999;
-      margin: 0 5px 0 0; }
+      margin: 0 0 0 5px; }
   .comments-area .replay .time {
     color: #999999; }
   .comments-area .replay .l {
     width: 100%; }
 
 .comments-area .persion-replay {
-  background: #f8f8f8;
-  border: 1px solid #dfdfdf;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   margin: 15px 0 0 0; }
   .comments-area .persion-replay .pr {
-    border-bottom: 1px solid #dfdfdf;
     padding: 0 0 10px 0;
     margin: 0 0 10px 0; }
     .comments-area .persion-replay .pr:last-child {
       padding: 0;
       margin: 0;
       border-bottom: none; }
-  .comments-area .persion-replay .head {
+  .comments-area .persion-replay .head, .comments-area .persion-replay .head ._left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1080,47 +1102,38 @@ section.banner_ads img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0 0 5px 0; }
-    .comments-area .persion-replay .head h5 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .comments-area .persion-replay .head h5, .comments-area .persion-replay .head ._left h5 {
       font-size: 15px;
       font-weight: bold; }
-    .comments-area .persion-replay .head i {
-      background: #0e8a04;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      color: #fff;
-      font-size: 10px;
-      text-align: center;
-      line-height: 20px;
-      margin: 0 5px 0 0; }
-    .comments-area .persion-replay .head span {
-      background: #0e8a04;
-      padding: 0 5px;
-      border-radius: 3px;
-      color: #fff;
-      margin: 0 0 0 5px; }
-  .comments-area .persion-replay i.arrow {
-    position: relative; }
-    .comments-area .persion-replay i.arrow::before {
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #f8f8f8;
-      content: "";
-      position: absolute;
-      top: -30px;
-      left: -10px;
-      z-index: 3; }
-    .comments-area .persion-replay i.arrow::after {
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #dfdfdf;
-      content: "";
-      position: absolute;
-      top: -31px;
-      left: -10px;
-      z-index: 2; }
+  .comments-area .persion-replay .head {
+    margin: 0 0 10px 0; }
+    .comments-area .persion-replay .head ._left img {
+      margin: 0 10px 0 0; }
+
+.box-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  background: #f0f0f0;
+  margin: 0 0 20px 0; }
+  .box-comments span.count {
+    color: #000000;
+    font-size: 18px; }
+  .box-comments .search-ct a {
+    font-size: 15px;
+    color: #000; }
+    .box-comments .search-ct a:nth-child(1) {
+      border-right: 1px solid #000;
+      margin: 0 10px 0 0;
+      padding: 0 10px 0 0; }

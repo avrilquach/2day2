@@ -1036,14 +1036,22 @@ section.banner_ads
 .comments-area
   .replay_comment .l
     margin: 0 0 20px 0
-
-  .name
+    border-bottom: 1px dashed #000
+  .name, .name ._left
+    display: flex
+    display: -webkit-flex
+    justify-content: space-between
+    align-items: center
     h5
       font-size: 15px
       font-weight: bold
       margin: 0 0 5px 0
+  .name
+    margin: 0 0 10px 0
+    ._left
+      img
+        margin: 0 10px 0 0
   .replay
-    margin: 5px 0 0 0
     display: -webkit-box
     display: -ms-flexbox
     display: flex
@@ -1051,14 +1059,22 @@ section.banner_ads
     -webkit-box-align: center
     -ms-flex-align: center
     align-items: center
-
+    .like
+      i
+        color: #01c3ff
     a
       margin: 0 10px 0 0
+      padding: 0 10px 0 0
       color: #288ad6
-
+      border-right: 1px solid #000
+      color: #004f8b
+      &:last-child
+        border-right: none
+        margin: 0
+        padding: 0
       i
         color: #999999
-        margin: 0 5px 0 0
+        margin: 0 0 0 5px
 
     .time
       color: #999999
@@ -1067,13 +1083,10 @@ section.banner_ads
       width: 100%
 
   .persion-replay
-    background: #f8f8f8
-    border: 1px solid #dfdfdf
-    padding: 20px
+    padding: 20px 0 20px 20px
     margin: 15px 0 0 0
 
     .pr
-      border-bottom: 1px solid #dfdfdf
       padding: 0 0 10px 0
       margin: 0 0 10px 0
 
@@ -1082,61 +1095,38 @@ section.banner_ads
         margin: 0
         border-bottom: none
 
-    .head
-      display: -webkit-box
-      display: -ms-flexbox
+    .head, .head ._left
       display: flex
       display: -webkit-flex
-      -webkit-box-align: center
-      -ms-flex-align: center
       align-items: center
-      margin: 0 0 5px 0
-
+      justify-content: space-between
       h5
         font-size: 15px
         font-weight: bold
+    .head
+      margin: 0 0 10px 0
+      ._left 
+        img
+          margin: 0 10px 0 0
+.box-comments
+  display: flex
+  display: -webkit-flex
+  justify-content: space-between
+  align-items: center
+  padding: 20px
+  background: #f0f0f0
+  margin: 0 0 20px 0
+  span.count
+    color: #000000
+    font-size: 18px
 
-      i
-        background: #0e8a04
-        border-radius: 50%
-        width: 20px
-        height: 20px
-        color: #fff
-        font-size: 10px
-        text-align: center
-        line-height: 20px
-        margin: 0 5px 0 0
-
-      span
-        background: #0e8a04
-        padding: 0 5px
-        border-radius: 3px
-        color: #fff
-        margin: 0 0 0 5px
-
-    i.arrow
-      position: relative
-
-      &::before
-        width: 0
-        height: 0
-        border-left: 10px solid transparent
-        border-right: 10px solid transparent
-        border-bottom: 10px solid #f8f8f8
-        content: ""
-        position: absolute
-        top: -30px
-        left: -10px
-        z-index: 3
-
-      &::after
-        width: 0
-        height: 0
-        border-left: 10px solid transparent
-        border-right: 10px solid transparent
-        border-bottom: 10px solid #dfdfdf
-        content: ""
-        position: absolute
-        top: -31px
-        left: -10px
-        z-index: 2
+  .search-ct
+    a
+      font-size: 15px
+      color: #000
+      &:nth-child(1)
+        border-right: 1px solid #000
+        margin: 0 10px 0 0
+        padding: 0 10px 0 0
+    
+  
