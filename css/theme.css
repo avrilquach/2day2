@@ -861,9 +861,8 @@ section.banner_ads img {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .box_login_register_ .tab-content .remember_pass input[type='checkbox'] {
-        width: 25px;
-        height: 25px; }
+      .box_login_register_ .tab-content .remember_pass input {
+        margin: 0 5px 0 0; }
     .box_login_register_ .tab-content .bottom_ {
       margin: 20px 0 0 0; }
       .box_login_register_ .tab-content .bottom_ #login_fb {
@@ -878,3 +877,5 @@ section.banner_ads img {
       color: #fff;
       border: none;
       text-transform: uppercase; }
+  .box_login_register_ #register .form_text {
+    width: 49%; }

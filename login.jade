@@ -18,6 +18,7 @@ html
                 .middle_.row.align-items-center.justify-content-between 
                   .remember_pass
                     input(type="checkbox")
+                    span.checkmark
                     | Nhớ mật khẩu 
                   .forget_pass
                     a(href="#") Quên mật khẩu?
@@ -30,4 +31,15 @@ html
                     a(href="#")#login_gg
                       img(src="img/2day/btn_gg.jpg",alt='')
             .tab-pane#register
+              form
+                .row.justify-content-between
+                  input(type="text" name="name" placeholder="Tên đăng nhập(*)").form_text 
+                  input(type='email' name='email' placeholder="Email(*)").form_text
+                .row.justify-content-between
+                  input(type='password' name='password' placeholder="Mật khẩu(*)").form_text
+                  input(type='password' name='recoverpassword' placeholder="Nhập lại mật khẩu(*)").form_text
+                .bottom_.row.align-items-center.justify-content-center 
+                  input(type='submit' value="Đăng ký")
+                
+                
     include inc/script.jade
