@@ -19,29 +19,58 @@ html
                 a(href='#') Cuộc sống
               li
                 a(href='#') Title 
-    section.video_detail.pad15_0
+    section.video_detail.newsdetail-page.pad30_0
         .container
           .row
-            .col-lg-9
-              ._content
+            .col-lg-8
+              ._content_video_player
                 img(src='img/2day/Video_Detail_1.jpg',alt='')
-            .col-lg-3
+              .detail.padtp30_0
+                h1
+                  | 5 Essential Rules to a Healthy and Happy Life
+                // Details
+                .head
+                  .text
+                    span.date 684.776 lượt xem 
+                      span Đăng ngày 26-08-2019 
+                .ctent_detail
+                  p
+                    | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+                  p
+                    img.lazy(alt='', src='img/2day/detail.jpg')
+                  p
+                    | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+            .col-lg-4
+              .sidebar
+                img.banner-main.hover-img.animated.lazy(src='img/2day/new2.jpg')
               .sidebar
                 h2 VIDEO HOT NHẤT 
-                ._item_
-                  .img
-                    img(src='img/2day/img7.jpg', alt='')
-                    .popup-youtube
-                      img(src='img/2day/icon.png',alt='')
-                  .text
-                    h4
-                      a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing...
-                    span
-                      | Đời sống 
-                      span.date - 1 ngày trước 
- 
+                -for(i=0;i<3;i++)
+                  ._item_
+                    .img
+                      img(src='img/2day/img1.jpg', alt='')
+                      .popup-youtube
+                        img(src='img/2day/icon.png',alt='')
+                    .text
+                      h4
+                        a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing...
+                      span.category
+                        | Cuộc sống
+                      span.view 123K Lượt xem
+              .sidebar
+                h2 VIDEO LIÊN QUAN
+                -for(i=0;i<3;i++)
+                  ._item_
+                    .img
+                      img(src='img/2day/img1.jpg', alt='')
+                      .popup-youtube
+                        img(src='img/2day/icon.png',alt='')
+                    .text
+                      h4
+                        a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing...
+                      span.category
+                        | Cuộc sống
+                      span.view 123K Lượt xem 
 
-
-        
     include inc/footer.jade
     include inc/script2.jade
