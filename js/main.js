@@ -70,4 +70,16 @@ $(document).ready(function() {
 $('.main-trending .owl-dot').each(function(){
 	$(this).text($(this).index()+1);
 	});
+	$('.main-video').owlCarousel({
+		loop: true,
+		nav: false,
+		items: 4,
+		dots: true,
+		autoplay: true,
+		smartSpeed: 200,
+		margin: 30,
+		nav: true,
+		navText: ['<i class="arrow-left"><img src="img/2day/svg/left.svg" alt=""></i>', '<i class="arrow-right"><img src="img/2day/svg/right.svg" alt=""></i>'],
+			
+});
 })
