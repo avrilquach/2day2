@@ -47,5 +47,27 @@ $(document).ready(function() {
 		$('.loadnews').append(html);
 	}
 	 $('.lazy').lazy();
-	
+	 $('.main-trending').owlCarousel({
+		loop: true,
+		nav: false,
+		items: 1,
+		dots: true,
+		autoplay: true,
+		smartSpeed: 200,
+		responsiveClass:true,
+			responsive:{
+					0:{
+							items:1
+					},
+					768:{
+							items:1
+					},
+					1200:{
+							items:1
+					}
+			}
+});
+$('.main-trending .owl-dot').each(function(){
+	$(this).text($(this).index()+1);
+	});
 })
