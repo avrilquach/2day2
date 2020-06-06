@@ -88,4 +88,7 @@ $('.lg-right .search').click(function(e){
 $('.search-close').click(function(e){
 	$('.form-search').hide();
 })
+$('.info-avatar').click(function(e){
+	$('.info-open').toggleClass('active');
+})
 })
