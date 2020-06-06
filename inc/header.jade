@@ -20,6 +20,7 @@ header#header
           .lg-right
             .search
               img(src='img/2day/svg/search.svg',alt='')
+            
             ul
               li
                 a(href='#')
@@ -28,6 +29,15 @@ header#header
               li
                 a(href='#')
                   | Đăng nhập
+  .form-search(style='display: none')
+    .container
+      .row
+        .col-lg-12
+          input(type='text' placeholder='Tìm kiếm. . .')
+          span.search-icon
+            img(src='img/2day/svg/search-big.svg',alt='')
+          span.search-close
+            img(src='img/2day/svg/close.svg',alt='')
   .main-nav
     .container
       .row.align-items-center.justify-content-between

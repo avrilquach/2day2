@@ -82,4 +82,10 @@ $('.main-trending .owl-dot').each(function(){
 		navText: ['<i class="arrow-left"><img src="img/2day/svg/left.svg" alt=""></i>', '<i class="arrow-right"><img src="img/2day/svg/right.svg" alt=""></i>'],
 			
 });
+$('.lg-right .search').click(function(e){
+	$('.form-search').show();
+})
+$('.search-close').click(function(e){
+	$('.form-search').hide();
+})
 })
