@@ -125,6 +125,8 @@ img
 header
   .nav-top
     background: #f3f3f3
+    .row
+      height: 30px
     .social-left
       ul
         display: flex
@@ -133,7 +135,7 @@ header
         li
           a
             font-size: 14px
-            margin: 0 10px 0 0
+            margin: 0 20px 0 0
             color: #000
             
     .lg-right
@@ -151,7 +153,7 @@ header
             color: #636363
             font-size: 14px 
     .search
-      position: relative
+      margin: 0 30px 0 0
       input
         &[type="search"]
           border: none
@@ -310,27 +312,74 @@ footer
   .footer-bottom
     ._style
       p
-        font-family: Roboto, sans-serif
+        font-family: 'Roboto', sans-serif
         font-weight: 300
         font-size: 16px
         line-height: 24px
         color: #DADADA
         margin: 0 0 10px 0
-
-    ul.social
-      display: flex
-      dipslay: -webkit-flex
-      align-items: center
-      li
-        margin: 0 20px 0 0
+    ._style2
+      ul
+        li
+          margin: 0 0 15px 0
+          a
+            font-family: 'Roboto', sans-serif
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            color: #DBDADA
+            display: block
+            margin: 10px 0 0 0
+    ._style1
+      ul
+        display: flex
+        li
+          margin-right: 30px
+          a
+            span
+              font-family: 'Roboto', sans-serif
+              font-weight: 300
+              font-size: 16px
+              line-height: 26px
+              color: #DBDADA
+              display: block
+              margin: 10px 0 0 0
+      span.blue
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+        font-size: 16px
+        line-height: 26px
+        color: #01C3FF
+        display: block
+        margin: 0 0 10px 0
+      p
+        margin: 0 0 20px 0
+        display: block
+        span.blue
+          font-family: 'Roboto', sans-serif
+          font-weight: 300
+          font-size: 16px
+          line-height: 26px
+          color: #01C3FF
+          display: block
         a
-          i
-            font-size: 23px
-            color: #000
+          font-family: 'Roboto', sans-serif
+          font-weight: 300
+          font-size: 16px
+          line-height: 26px
+          color: #DADADA
 
   .footer-copyright
     text-align: center
-    background: #efefef
+    background: #00131A
+    border-top: 1px solid #013849
+    padding: 20px 0
+    p
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 14px
+      line-height: 26px
+      color: #DADADA
 .page_videos
   &.video_category
     .item
@@ -1261,6 +1310,8 @@ section.banner_ads
       font-size: 13px
       line-height: 24px
       color: #A4A4A4
+      margin: 0 0 5px 0
+      display: block
     p
       font-family: 'Roboto', sans-serif
       font-weight: 300
