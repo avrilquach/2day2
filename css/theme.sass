@@ -317,11 +317,11 @@ footer
         font-size: 16px
         line-height: 24px
         color: #DADADA
-        margin: 0 0 10px 0
+        margin: 0 0 20px 0
     ._style2
       ul
         li
-          margin: 0 0 15px 0
+          margin: 0 0 18px 0
           a
             font-family: 'Roboto', sans-serif
             font-weight: 300
@@ -1254,6 +1254,16 @@ section.banner_ads
 .item-new
   .inner
     position: relative
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%)
+      content: ''
     .caption
       position: absolute
       bottom: 0
@@ -1539,6 +1549,17 @@ section.banner_ads
     color: #FFFFFF
     margin: 0 0 30px 0
   .item
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%)
+      content: ''
+      z-index: 1
     img
       border-radius: 5px
       position: relative
@@ -1552,6 +1573,7 @@ section.banner_ads
       position: absolute
       top: 20px
       left: 20px
+      z-index: 2
       img
         width: auto
         margin-right: -5px
@@ -1559,6 +1581,7 @@ section.banner_ads
       position: absolute
       bottom: 0
       padding: 20px
+      z-index: 2
       h4
         font-family: 'Barlow Condensed', sans-serif
         font-weight: 500

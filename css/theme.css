@@ -324,9 +324,9 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: #DADADA;
-    margin: 0 0 10px 0; }
+    margin: 0 0 20px 0; }
   footer .footer-bottom ._style2 ul li {
-    margin: 0 0 15px 0; }
+    margin: 0 0 18px 0; }
     footer .footer-bottom ._style2 ul li a {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -1297,6 +1297,19 @@ section.banner_ads img {
 
 .item-new .inner {
   position: relative; }
+  .item-new .inner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(51.62%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    content: ''; }
   .item-new .inner .caption {
     position: absolute;
     bottom: 0;
@@ -1609,6 +1622,20 @@ section.banner_ads img {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 30px 0; }
+  .video .item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(51.62%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    content: '';
+    z-index: 1; }
   .video .item img {
     border-radius: 5px;
     position: relative; }
@@ -1625,14 +1652,16 @@ section.banner_ads img {
     justify-content: center;
     position: absolute;
     top: 20px;
-    left: 20px; }
+    left: 20px;
+    z-index: 2; }
     .video .item .arrow img {
       width: auto;
       margin-right: -5px; }
   .video .item .caption {
     position: absolute;
     bottom: 0;
-    padding: 20px; }
+    padding: 20px;
+    z-index: 2; }
     .video .item .caption h4 {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 500;
