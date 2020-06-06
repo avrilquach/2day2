@@ -324,8 +324,10 @@ footer {
     line-height: 24px;
     color: #DADADA;
     margin: 0 0 20px 0; }
+    footer .footer-bottom ._style p:last-child {
+      margin: 0; }
   footer .footer-bottom ._style2 ul li {
-    margin: 0 0 18px 0; }
+    margin: 0 0 20px 0; }
     footer .footer-bottom ._style2 ul li a {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -334,12 +336,16 @@ footer {
       color: #DBDADA;
       display: block;
       margin: 10px 0 0 0; }
+    footer .footer-bottom ._style2 ul li:last-child {
+      margin: 0; }
   footer .footer-bottom ._style1 ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     footer .footer-bottom ._style1 ul li {
       margin-right: 30px; }
+      footer .footer-bottom ._style1 ul li img {
+        height: 24px; }
       footer .footer-bottom ._style1 ul li a span {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
