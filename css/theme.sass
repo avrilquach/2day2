@@ -210,7 +210,6 @@ header
           color: #fff
           text-transform: uppercase
           font-size: 18px
-          font-weight: bold
           &.dots
             display: flex
             span
@@ -1167,6 +1166,7 @@ section.banner_ads
         color: #000
         font-size: 15px
 #main-trending
+  width: calc(24% - 15px)
   .owl-dots
     display: flex
     align-items: center
@@ -1328,28 +1328,24 @@ section.banner_ads
       font-size: 16px
       line-height: 24px
       color: #636363
-.col-lg-3-1
-  flex: 0 0 27%;
-  max-width: 27%;
-.col-lg-3-2
-  flex: 0 0 23%;
-  max-width: 23%;
 #banner_ads
+  width: calc(23% - 15px)
   .banner_ads
-    margin: 30px 0
+    margin: 15px 0
   img
     width: 100%
 #main-trending-2
-  margin-top: 30px
+  margin-top: 15px
+  width: calc(53% - 15px)
   .row
     .item-new
-      width: calc(50% - 15px)
+      width: calc(50% - 13px)
       &.item-new-1
         .inner
-          margin-top: 30px
+          margin-top: 26px
       &.item-new-2
         .inner
-          margin-top: 30px
+          margin-top: 26px
 .banner_center
   margin: 30px 0 0 0
   img
@@ -1598,6 +1594,11 @@ section.banner_ads
 .newest2
   .row
     margin-bottom: 30px
+    .item-new2 
+      .caption
+        h3
+          font-size: 30px
+          line-height: 30px
   .content-left
     width: calc(50% - 15px)
     position: relative

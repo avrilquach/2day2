@@ -5,77 +5,78 @@ html
     include inc/header.jade
     .container
       // top
-      .row
-        .col-lg-3.col-lg-3-1#main-trending
-          h2 
-           span trending
-          .owl-carousel.owl-theme.main-trending
-            -for(i=0;i<3;i++)
-              .item
-                a(href='#').children
-                  .img
-                    img(src='img/2day/hinh1.jpg', alt='')
+      .col-lg-12
+        .row.justify-content-between
+          #main-trending
+            h2 
+              span trending
+            .owl-carousel.owl-theme.main-trending
+              -for(i=0;i<3;i++)
+                .item
+                  a(href='#').children
+                    .img
+                      img(src='img/2day/hinh1.jpg', alt='')
+                    .cate
+                      span.name.red du lịch
+                      span.time Cách đây 3 giờ
+                    .title
+                      span 1
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  a(href='#').children
+                    .img
+                      img(src='img/2day/hinh2.jpg', alt='')
+                    .cate
+                      span.name.green giải trí
+                      span.time Cách đây 3 giờ
+                    .title
+                      span 2
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  a(href='#').children
+                    .img
+                      img(src='img/2day/hinh3.jpg', alt='')
+                    .cate
+                      span.name.blue xã hội
+                      span.time Cách đây 3 giờ
+                    .title
+                      span 3
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+          #main-trending-2
+            a(href='#').item-new
+              .inner
+                img(src='img/2day/hinh4.jpg', alt='')
+                .caption
                   .cate
                     span.name.red du lịch
                     span.time Cách đây 3 giờ
-                  .title
-                    span 1
-                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
-                a(href='#').children
-                  .img
-                    img(src='img/2day/hinh2.jpg', alt='')
-                  .cate
-                    span.name.green giải trí
-                    span.time Cách đây 3 giờ
-                  .title
-                    span 2
-                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
-                a(href='#').children
-                  .img
-                    img(src='img/2day/hinh3.jpg', alt='')
-                  .cate
-                    span.name.blue xã hội
-                    span.time Cách đây 3 giờ
-                  .title
-                    span 3
-                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
-        .col-lg-6#main-trending-2
-          a(href='#').item-new
-            .inner
-              img(src='img/2day/hinh4.jpg', alt='')
-              .caption
-                .cate
-                  span.name.red du lịch
-                  span.time Cách đây 3 giờ
-                h3 Lorem Ipsum is simply dummy text of the printing and typesetting
-          .row.justify-content-between
-            a(href='#').item-new.item-new-1
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+            .row.justify-content-between
+              a(href='#').item-new.item-new-1
+                .inner
+                  img(src='img/2day/hinh5.jpg', alt='')
+                  .caption
+                    .cate
+                      span.name.green giải trí
+                      span.time Cách đây 3 giờ
+                    h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
+              a(href='#').item-new.item-new-2
+                .inner
+                  img(src='img/2day/hinh5.jpg', alt='')
+                  .caption
+                    .cate
+                      span.name.purple làm đẹp 
+                      span.time Cách đây 3 giờ
+                    h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
+          #banner_ads
+            .banner_ads 
+              img(src='img/2day/hinh6.jpg', alt='')
+            a(href='#').item-new
               .inner
-                img(src='img/2day/hinh5.jpg', alt='')
+                img(src='img/2day/hinh7.jpg', alt='')
                 .caption
                   .cate
-                    span.name.green giải trí
+                    span.name.orange thể thao
                     span.time Cách đây 3 giờ
                   h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
-            a(href='#').item-new.item-new-2
-              .inner
-                img(src='img/2day/hinh5.jpg', alt='')
-                .caption
-                  .cate
-                    span.name.purple làm đẹp 
-                    span.time Cách đây 3 giờ
-                  h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
-        .col-lg-3#banner_ads.col-lg-3-2
-          .banner_ads 
-            img(src='img/2day/hinh6.jpg', alt='')
-          a(href='#').item-new
-            .inner
-              img(src='img/2day/hinh7.jpg', alt='')
-              .caption
-                .cate
-                  span.name.orange thể thao
-                  span.time Cách đây 3 giờ
-                h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
       .banner_center
         .col-lg-12
           a(href='#')
