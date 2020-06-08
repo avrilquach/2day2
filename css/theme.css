@@ -548,8 +548,9 @@ footer {
     font-size: 30px; }
 
 .page_videos .video_top_ {
-  position: relative;
-  margin: 0 0 250px 0; }
+  position: relative; }
+  .page_videos .video_top_ .video_sec2 {
+    margin-top: -100px; }
   .page_videos .video_top_ .video_sec:nth-child(1) {
     position: relative; }
     .page_videos .video_top_ .video_sec:nth-child(1) .caption {
@@ -751,7 +752,8 @@ footer {
   display: block;
   position: relative;
   background-position: top center;
-  margin: 0; }
+  margin: 0;
+  background-repeat: no-repeat; }
   .page_videos .main-banner .item::before {
     position: absolute;
     top: 0;
@@ -780,7 +782,9 @@ footer {
     width: 10%;
     position: absolute;
     right: 200px;
-    top: 35%; }
+    top: 35%;
+    width: 100px;
+    height: 100px; }
 
 .page_videos .main-banner .owl-nav {
   position: absolute;
