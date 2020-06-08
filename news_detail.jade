@@ -5,10 +5,11 @@ html
     include inc/header.jade
     .banner
       .container
-        .row
-          img(src='img/2day/hinh26.jpg')
+        .row(style="margin: 15px 0")
+          .col-lg-12
+            img(src='img/2day/hinh26.jpg')
     include inc/breadcrumb2.jade
-    section.newsdetail-page.pad30_0.page_videos
+    section.newsdetail-page.page_videos
       .container
         .row
           .col-lg-9
@@ -20,66 +21,46 @@ html
                 .text
                   span.date Admin - 
                     span 20/12/2018
-                  span.social
-                    img(src='img/like.jpg')
-              .xem-nhanh
-                ul
-                  -for(i=0;i<3;i++)
-                    li
-                      a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                span.social
+                  img(src='img/2day/hinh27.jpg')
+              h2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               .ctent_detail
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
-                p
-                  img.lazy(alt='', src='img/2day/detail.jpg')
+                img(src='img/2day/hinh28.jpg')
+              blockquote
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              h2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              .ctent_detail
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+                img(src='img/2day/hinh29.jpg')
+                ul
+                  li
+                    a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  li
+                    a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  li
+                    a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              .row.justify-content-between
+                .ctent_detail_left.ctent_detail
+                  p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                .ctent_detail_right.ctent_detail
+                  img(src='img/2day/hinh30.jpg')
+              .ctent_detail
+                p
+                  | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+              .head
+                span.social
+                  img(src='img/2day/hinh27.jpg')
             .box-comments
-              span.count Ý kiến bạn đọc (107)
-              .search-ct
-                a(href="#") Quan tâm nhất
-                a(href="#") Mới nhất 
-            #comments.comments-area
-              .replay_comment
-                -for(i=0;i<2;i++)
-                  .l
-                    .name
-                      ._left
-                        img(src='img/2day/avatar.jpg')
-                        h5 Nguyễn Mạnh Linh 
-                          span - 07:25 13/08
-                      .replay
-                        a(href='#').like
-                          i.fas.fa-thumbs-up
-                          |  200 Thích
-                        a(href='#').answer Trả lời
-                          i.fas.fa-flag
-                        a(href='#').share
-                          | Chia sẻ
-                          i.fas.fa-chevron-down                
-                    .content
-                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
-                    .persion-replay
-                      -for(y=0;y<3;y++)
-                        .pr
-                          .head
-                            ._left
-                              img(src='img/2day/avatar.jpg')
-                              h5 Nguyễn Mạnh Linh 
-                                span - 07:25 13/08
-                            .replay
-                              a(href='#').like
-                                i.fas.fa-thumbs-up
-                                |  200 Thích
-                              a(href='#').answer Trả lời
-                                i.fas.fa-flag
-                              a(href='#').share
-                                | Chia sẻ
-                                i.fas.fa-chevron-down                  
-                          .msg
-                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+              span.count Ý kiến (107)
             form.comments-review
-              textarea.comments(name='comments' placeholder='Ý kiến của bạn ')
+              .row
+                .img
+                  img(src='img/2day/hinh31.png')
+                textarea.comments(name='comments' placeholder='Ý kiến của bạn ')
               .row.pad15_0.align-items-center.justify-content-between 
                 p Hãy 
                   a(href="#") Đăng Nhập 
@@ -88,6 +69,62 @@ html
                   | để gửi bình luận
                 span.submit
                   input(type='submit', value='Gửi')
+            #comments.comments-area
+              .replay_comment
+                -for(i=0;i<2;i++)
+                  .l
+                    .name
+                      ._left
+                        img(src='img/2day/avatar.jpg')
+                        h5 Quách Phương Anh
+                    .content_left          
+                      .content
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+                      .replay
+                        a(href='#').answer Trả lời
+                        a(href='#').like
+                          img(src='img/2day/svg/like.svg')
+                          |  200 Thích
+                        a(href='#').share
+                          | Chia sẻ
+                        a.time 1 ngày trước
+                      .count-answer
+                        img(src='img/2day/svg/muiten.svg')
+                        span 2 trả lời
+                    .persion-replay
+                      -for(y=0;y<3;y++)
+                        .pr
+                          .head
+                            ._left
+                              img(src='img/2day/avatar.jpg')
+                              h5 Ngan Giang 
+                          .content_left          
+                            .content
+                              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+                            .replay
+                              a(href='#').answer Trả lời
+                              a(href='#').like
+                                img(src='img/2day/svg/like.svg')
+                                |  200 Thích
+                              a(href='#').share
+                                | Chia sẻ
+                              a.time 1 ngày trước
+              a.xem-them Xem thêm
+            .tags
+              span TAGs:
+              ul
+                li
+                  a(href="#") Fashion
+                li
+                  a(href="#") Làm đẹp
+                li
+                  a(href="#") Du lịch
+                li
+                  a(href="#") Video
+                li
+                  a(href="#") Xã hội
+                li
+                  a(href="#") Trending
             .newest2
               h2
                 span tin liên quan
@@ -148,6 +185,16 @@ html
                 img(src='img/2day/hinh24.jpg', alt='')
               a(href='#')
                 img(src='img/2day/hinh25.jpg', alt='')
+            .newest
+              h2 
+                span xem nhiều nhất
+              -for(i=0;i<3;i++)
+                a.item-new2(href="#")
+                  img(src="img/2day/hinh17.jpg" alt="")
+                  .caption
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                    span.time 12/05/2020
+            
             .newest
               h2 
                 span tin nổi bật 

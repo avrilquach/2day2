@@ -91,4 +91,20 @@ $('.search-close').click(function(e){
 $('.info-avatar').click(function(e){
 	$('.info-open').toggleClass('active');
 })
+$(window).on('scroll', function() {
+	var wtop = $(window).scrollTop();
+	if (wtop > 500) {
+			$('.menu').addClass('sticky-header');
+			$("#top").addClass('active');
+	} else {
+			$("#top").removeClass('active');
+			$('.menu').removeClass('sticky-header');
+	}
+});
+$("a[href='#top']").click(function() {
+	$("html, body").animate({
+			scrollTop: 0
+	}, "slow");
+	return false;
+});
 })
