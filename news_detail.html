@@ -4,12 +4,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="generator" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
   <!-- Load css styles-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/owl-carousel2/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <!-- Load Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,500;0,700;1,600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
   <title>2day</title>
   <body>
     <!-- Header-->
@@ -20,21 +24,16 @@
             <div class="col-lg-6">
               <div class="social-left"> 
                 <ul>
-                  <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li> <a href="#"><img src="img/2day/svg/Facebook-top.svg" alt=""></a></li>
+                  <li> <a href="#"><img src="img/2day/svg/youtube-top.svg" alt=""></a></li>
+                  <li> <a href="#"><img src="img/2day/svg/Instagram-top.svg" alt=""></a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="lg-right">
-                <form class="search">
-                  <input type="search" placeholder="Bạn cần tìm gì hôm nay ?">
-                  <input type="submit" value=""><i class="fa fa-search"></i>
-                </form>
-                <ul>
+                <div class="search"><img src="img/2day/svg/search.svg" alt=""></div>
+                <ul class="top">
                   <li><a href="#">Đăng ký</a></li>
                   <li>/</li>
                   <li><a href="#">Đăng nhập</a></li>
@@ -44,16 +43,21 @@
           </div>
         </div>
       </div>
+      <div class="form-search" style="display: none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <input type="text" placeholder="Tìm kiếm. . ."><span class="search-icon"><img src="img/2day/svg/search-big.svg" alt=""></span><span class="search-close"><img src="img/2day/svg/close.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="main-nav">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-lg-2"><a href="/"><img src="img/2day/logo.jpg" alt=""></a></div>
-            <div class="col-lg-10">
-              <div class="banner_ads">
-                <div class="first"><img src="img/2day/ads1.jpg" alt=""></div>
-                <div class="last"><img src="img/2day/ads2.jpg" alt=""></div>
-              </div>
-            </div>
+            <div class="col-lg-2"><a href="/"><img src="img/2day/logo.png" alt=""></a></div>
+            <div class="col-lg-5"><img src="img/2day/ads1.jpg" alt=""></div>
+            <div class="col-lg-5"><img src="img/2day/ads2.jpg" alt=""></div>
           </div>
         </div>
       </div>
@@ -62,32 +66,36 @@
           <div class="row">
             <div class="col-lg-12"> 
               <ul>
-                <li><a href="#">star	    	     	     	     	     	     	     	     	          	     	     </a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Show</a></li>
-                <li><a href="#">Ciné</a></li>
-                <li><a href="#">Musik</a></li>
-                <li><a href="#">Beauty & Fashion</a></li>
-                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">
+                          TV	    	     	     	     	     	     	     	     	          	     	     </a></li>
+                <li><a href="#">giải trí</a></li>
+                <li><a href="#">làm đẹp & Thời trang</a></li>
+                <li><a href="#">Đời sống </a></li>
                 <li><a href="#">Du lịch</a></li>
-                <li><a href="#">Xã hội</a></li>
-                <li><a href="#">Thế giới</a></li>
-                <li><a href="#">Sport</a></li>
+                <li><a href="#"> Xã hội</a></li>
+                <li><a href="#">Thế giớI</a></li>
                 <li><a href="#">Học đường</a></li>
                 <li><a href="#">Video</a></li>
+                <li><a class="dots" href="#"><span></span><span></span><span></span></a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div class="banner">
+      <div class="container">
+        <div class="row"><img src="img/2day/hinh26.jpg"></div>
+      </div>
+    </div>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs pad10_0">
+    <section class="breadcrumbs pad10_0 breadcrumbs2">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <ul>
-              <li><a href="#"> <i class="fas fa-home"></i>Trang chủ</a></li>
+              <li><a href="#">
+                   Trang chủ</a></li>
               <li><a href="#">Đời sống   </a></li>
             </ul>
           </div>
@@ -97,7 +105,7 @@
     <section class="newsdetail-page pad30_0 page_videos">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-9">
             <div class="detail">
               <h1>5 Essential Rules to a Healthy and Happy Life</h1>
               <!-- Details-->
@@ -117,44 +125,6 @@
                 <p>What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.</p>
               </div>
             </div>
-            <!-- Video-->
-            <section class="video_sec pad15_0">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h2 class="_top-head padbt0_30">Tin liên quan</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"><a class="item" href="#">
-                    <div class="img hover-img2 animated"><img src="img/2day/img1.jpg" alt=""></div>
-                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3></a></div>
-                <div class="col-lg-3"><a class="item" href="#">
-                    <div class="img hover-img2 animated"><img src="img/2day/img1.jpg" alt=""></div>
-                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3></a></div>
-                <div class="col-lg-3"><a class="item" href="#">
-                    <div class="img hover-img2 animated"><img src="img/2day/img1.jpg" alt=""></div>
-                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3></a></div>
-                <div class="col-lg-3"><a class="item" href="#">
-                    <div class="img hover-img2 animated"><img src="img/2day/img1.jpg" alt=""></div>
-                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3></a></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list_">
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list_">
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                    <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
-                  </ul>
-                </div>
-              </div>
-            </section>
             <div class="box-comments"><span class="count">Ý kiến bạn đọc (107)</span>
               <div class="search-ct"><a href="#">Quan tâm nhất</a><a href="#">Mới nhất </a></div>
             </div>
@@ -257,40 +227,94 @@
                   <input type="submit" value="Gửi"></span>
               </div>
             </form>
+            <div class="newest2">
+              <h2><span>tin liên quan</span></h2>
+              <div class="row justify-content-between">
+                <div class="content-left"><img src="img/2day/hinh23.jpg" alt=""><span class="cate red">Du lịch </span></div>
+                <div class="content-right"><a class="item-new2" href="#">
+                    <div class="caption">
+                      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3><span class="time">12/05/2020</span>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div></a></div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="content-left"><img src="img/2day/hinh23.jpg" alt=""><span class="cate green">Giải trí</span></div>
+                <div class="content-right"><a class="item-new2" href="#">
+                    <div class="caption">
+                      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3><span class="time">12/05/2020</span>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div></a></div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="content-left"><img src="img/2day/hinh23.jpg" alt=""><span class="cate blue">Xã hội</span></div>
+                <div class="content-right"><a class="item-new2" href="#">
+                    <div class="caption">
+                      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3><span class="time">12/05/2020</span>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div></a></div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="content-left"><img src="img/2day/hinh23.jpg" alt=""><span class="cate purple">làm đẹp</span></div>
+                <div class="content-right"><a class="item-new2" href="#">
+                    <div class="caption">
+                      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3><span class="time">12/05/2020</span>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div></a></div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="content-left"><img src="img/2day/hinh23.jpg" alt=""><span class="cate orange">thể thao</span></div>
+                <div class="content-right"><a class="item-new2" href="#">
+                    <div class="caption">
+                      <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3><span class="time">12/05/2020</span>
+                      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div></a></div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4"><img class="padtp30_0" src="img/2day/img6.jpg" alt="">
-            <div class="box_news_specical pad30_0">
-              <h2>tin nổi bật</h2>
-              <div class="_item_">
-                <div class="img"><img src="img/2day/img7.jpg" alt=""></div>
-                <div class="text">
-                  <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing...</a></h4><span>Đời sống <span class="date">- 1 ngày trước </span></span>
-                </div>
-              </div>
-              <div class="_item_">
-                <div class="img"><img src="img/2day/img7.jpg" alt=""></div>
-                <div class="text">
-                  <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing...</a></h4><span>Đời sống <span class="date">- 1 ngày trước </span></span>
-                </div>
-              </div>
-              <div class="_item_">
-                <div class="img"><img src="img/2day/img7.jpg" alt=""></div>
-                <div class="text">
-                  <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing...</a></h4><span>Đời sống <span class="date">- 1 ngày trước </span></span>
-                </div>
-              </div>
-              <div class="_item_">
-                <div class="img"><img src="img/2day/img7.jpg" alt=""></div>
-                <div class="text">
-                  <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing...</a></h4><span>Đời sống <span class="date">- 1 ngày trước </span></span>
-                </div>
-              </div>
-              <div class="_item_">
-                <div class="img"><img src="img/2day/img7.jpg" alt=""></div>
-                <div class="text">
-                  <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing...</a></h4><span>Đời sống <span class="date">- 1 ngày trước </span></span>
-                </div>
-              </div>
+          <div class="col-lg-3">
+            <div class="banner-right"><a href="#"><img src="img/2day/hinh24.jpg" alt=""></a><a href="#"><img src="img/2day/hinh25.jpg" alt=""></a></div>
+            <div class="newest">
+              <h2> <span>tin nổi bật </span></h2><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh11.jpg" alt=""></div>
+                <div class="text"><span class="cate red">du lịch</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh12.jpg" alt=""></div>
+                <div class="text"><span class="cate blue">xã hội</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh13.jpg" alt=""></div>
+                <div class="text"><span class="cate orange">thể thao</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh14.jpg" alt=""></div>
+                <div class="text"><span class="cate green">giải trí</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh15.jpg" alt=""></div>
+                <div class="text"><span class="cate purple">làm đẹp</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh11.jpg" alt=""></div>
+                <div class="text"><span class="cate red">du lịch</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh12.jpg" alt=""></div>
+                <div class="text"><span class="cate blue">xã hội</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh13.jpg" alt=""></div>
+                <div class="text"><span class="cate orange">thể thao</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh14.jpg" alt=""></div>
+                <div class="text"><span class="cate green">giải trí</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a><a class="item" href="#">
+                <div class="img"><img src="img/2day/hinh15.jpg" alt=""></div>
+                <div class="text"><span class="cate purple">làm đẹp</span>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4><span class="time">12/05/2020</span>
+                </div></a>
             </div>
           </div>
         </div>
@@ -300,45 +324,49 @@
     <footer id="footer-new">
       <div class="footer-bottom pad50_0">
         <div class="container">
-          <div class="row justify-content-between"> 
-            <div class="col-lg-3"><a class="footer-logo" href="#"><img class="padbt0_20" src="img/2day/logo.jpg" alt=""></a>
-              <div class="_style_1">
-                <p>98/6 Đường Hoa Lan, Phường Tân Định Quận Phú Nhuận, Hồ Chí Minh</p>
-              </div>
-              <ul class="social">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <ul class="_style">
-                  <li><a href="#">Giới thiệu</a></li>
-                  <li><a href="#">Tích lũy điểm</a></li>
-                  <li><a href="#">Hỏi đáp</a></li>
-                  <li><a href="#">Liên hệ</a></li>
-                </ul>
-                <ul class="_style">
-                  <li><a href="#">Điều khoản sử dụng</a></li>
-                  <li><a href="#">Điều khoản riêng tư</a></li>
-                  <li><a href="#">Điều khoản về cộng đồng</a></li>
-                </ul>
+          <div class="col-lg-12">
+            <div class="row justify-content-between align-items-end">
+              <div class="div"><a class="footer-logo" href="#"><img class="padbt0_20" src="img/2day/logo-footer.png" alt=""></a>
                 <div class="_style">
-                  <p>Giấy phép số: 1450/GP do Sở TTTT Hà Nội cấp ngày 21/5/2014.</p>
-                  <p>Bản quyền và phát triển bởi Công ty cổ phần Truyền thông Kết Nối Sáng Tạo.</p>
+                  <p>98/6 đường Hoa Lan, Phường Tân Định,<br>Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+                  <p>Giấy phép số: 1450/GP do Sở TTTT Hà Nội<br>cấp ngày 21/5/2020</p>
                   <p>Chịu trách nhiệm nội dung: Bách</p>
                 </div>
               </div>
+              <div class="div">
+                <div class="row justify-content-end"> 
+                  <div class="_style1">
+                    <p><span class="blue">Phone</span><a href="tel:028 6286 0007">028 6286 0007</a></p>
+                    <p><span class="blue">Email</span><a href="mailto:">contactus@gmail.com</a></p><span class="blue">Social</span>
+                    <ul>
+                      <li><a href="#"><img src="img/2day/svg/Facebook.svg" alt=""><span>Facebook</span></a></li>
+                      <li><a href="#"><img src="img/2day/svg/youtube.svg" alt=""><span>Youtube</span></a></li>
+                      <li><a href="#"><img src="img/2day/svg/Instagram.svg" alt=""><span>Instagram</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="div">
+                <div class="row justify-content-end"> 
+                  <div class="_style2">
+                    <ul>
+                      <li><a href="#">Giới thiệu</a></li>
+                      <li><a href="#">Hỏi đáp</a></li>
+                      <li><a href="#"> Liện hệ</a></li>
+                      <li><a href="#"> Điều khoản sử dụng</a></li>
+                      <li><a href="#"> Điều khoản riêng tư</a></li>
+                      <li><a href="#"> Điều khoản về cộng đồng</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-3"><img class="float-right" src="img/2day/img5.jpg" alt=""></div>
           </div>
         </div>
       </div>
-      <div class="footer-copyright pad30_0">
+      <div class="footer-copyright">
         <div class="container">
-          <p>© Copyright 2019. Giấy phép MXH số 232/GP-BTTTT do Bộ TT&TT cấp ngày 14/06/2019</p>
+          <p>© Copyright 2020. Giấy phép MXH số 232/GP-BTTTT do Bộ TT&TT cấp ngày 18/05/2020</p>
         </div>
       </div>
     </footer>

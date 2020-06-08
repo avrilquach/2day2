@@ -3,11 +3,15 @@ html
   include inc/head.jade
   body
     include inc/header.jade
-    include inc/breadcrumb.jade
+    .banner
+      .container
+        .row
+          img(src='img/2day/hinh26.jpg')
+    include inc/breadcrumb2.jade
     section.newsdetail-page.pad30_0.page_videos
       .container
         .row
-          .col-lg-8
+          .col-lg-9
             .detail
               h1
                 | 5 Essential Rules to a Healthy and Happy Life
@@ -30,29 +34,6 @@ html
                   img.lazy(alt='', src='img/2day/detail.jpg')
                 p
                   | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
-            // Video
-            section.video_sec.pad15_0
-              .row
-                .col-lg-12
-                  h2._top-head.padbt0_30 Tin liên quan
-              .row
-                -for(i=0;i<4;i++)
-                  .col-lg-3
-                    a.item(href="#")
-                      .img.hover-img2.animated
-                        img(src='img/2day/img1.jpg', alt='')
-                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry
-              .row
-                -for(i=0;i<2;i++)
-                  .col-lg-6
-                    ul.list_
-                      li
-                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                      li
-                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                      li
-                        a(href="#") Lorem Ipsum is simply dummy text of the printing and typesetting industry
-
             .box-comments
               span.count Ý kiến bạn đọc (107)
               .search-ct
@@ -106,19 +87,139 @@ html
                   a(href="#") Tạo Tài Khoản 
                   | để gửi bình luận
                 span.submit
-                  input(type='submit', value='Gửi')       
-          .col-lg-4
-            img(src='img/2day/img6.jpg',alt='').padtp30_0
-            .box_news_specical.pad30_0
-              h2 tin nổi bật
-              -for(i=0;i<5;i++)
-                ._item_
-                  .img
-                    img(src='img/2day/img7.jpg',alt='')
-                  .text
-                    h4
-                      a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing...
-                    span Đời sống 
-                      span.date - 1 ngày trước 
+                  input(type='submit', value='Gửi')
+            .newest2
+              h2
+                span tin liên quan
+              .row.justify-content-between
+                .content-left
+                  img(src='img/2day/hinh23.jpg', alt='')
+                  span.cate.red Du lịch 
+                .content-right
+                  a(href='#').item-new2
+                    .caption
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                      span.time 12/05/2020
+                      p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              .row.justify-content-between
+                .content-left
+                  img(src='img/2day/hinh23.jpg', alt='')
+                  span.cate.green Giải trí
+                .content-right
+                  a(href='#').item-new2
+                    .caption
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                      span.time 12/05/2020
+                      p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              .row.justify-content-between
+                .content-left
+                  img(src='img/2day/hinh23.jpg', alt='')
+                  span.cate.blue Xã hội
+                .content-right
+                  a(href='#').item-new2
+                    .caption
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                      span.time 12/05/2020
+                      p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              .row.justify-content-between
+                .content-left
+                  img(src='img/2day/hinh23.jpg', alt='')
+                  span.cate.purple làm đẹp
+                .content-right
+                  a(href='#').item-new2
+                    .caption
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                      span.time 12/05/2020
+                      p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              .row.justify-content-between
+                .content-left
+                  img(src='img/2day/hinh23.jpg', alt='')
+                  span.cate.orange thể thao
+                .content-right
+                  a(href='#').item-new2
+                    .caption
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                      span.time 12/05/2020
+                      p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+      
+          .col-lg-3
+            .banner-right
+              a(href='#')
+                img(src='img/2day/hinh24.jpg', alt='')
+              a(href='#')
+                img(src='img/2day/hinh25.jpg', alt='')
+            .newest
+              h2 
+                span tin nổi bật 
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh11.jpg', alt='').
+                .text
+                  span.cate.red du lịch
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh12.jpg', alt='').
+                .text
+                  span.cate.blue xã hội
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh13.jpg', alt='').
+                .text
+                  span.cate.orange thể thao
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh14.jpg', alt='').
+                .text
+                  span.cate.green giải trí
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh15.jpg', alt='')
+                .text
+                  span.cate.purple làm đẹp
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh11.jpg', alt='').
+                .text
+                  span.cate.red du lịch
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh12.jpg', alt='').
+                .text
+                  span.cate.blue xã hội
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh13.jpg', alt='').
+                .text
+                  span.cate.orange thể thao
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh14.jpg', alt='').
+                .text
+                  span.cate.green giải trí
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
+              a.item(href='#')
+                .img
+                  img(src='img/2day/hinh15.jpg', alt='')
+                .text
+                  span.cate.purple làm đẹp
+                  h4 Lorem Ipsum is simply dummy text of the printing
+                  span.time 12/05/2020
     include inc/footer.jade
     include inc/script2.jade
