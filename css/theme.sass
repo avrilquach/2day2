@@ -375,7 +375,7 @@ section
         a
           color: #636363
           font-size: 16px
-          img
+          img, i
             margin: 0 10px 0 0
 
         &::after
@@ -647,6 +647,16 @@ footer
           color: #424242
   .item
     position: relative
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%)
+      content: ''
     &._style
       display: block
       height: 100%
@@ -675,7 +685,6 @@ footer
     .caption
       position: absolute
       bottom: 0
-      background: rgba(0,0,0,0.5)
       width: 100%
       padding: 10px
       h3, p, span
@@ -963,6 +972,7 @@ footer
         margin: 0 0 10px 0
       span
         font-size: 16px
+        font-family: 'Roboto', sans-serif
         span.date
           font-style: italic
     &:last-child 

@@ -402,7 +402,7 @@ section.breadcrumbs {
     section.breadcrumbs ul li a {
       color: #636363;
       font-size: 16px; }
-      section.breadcrumbs ul li a img {
+      section.breadcrumbs ul li a img, section.breadcrumbs ul li a i {
         margin: 0 10px 0 0; }
     section.breadcrumbs ul li::after {
       content: "/";
@@ -657,6 +657,19 @@ footer {
 
 .page_videos .item {
   position: relative; }
+  .page_videos .item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(51.62%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.62%, rgba(0, 0, 0, 0.6) 100%);
+    content: ''; }
   .page_videos .item._style {
     display: block;
     height: 100%; }
@@ -682,7 +695,6 @@ footer {
   .page_videos .item .caption {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px; }
     .page_videos .item .caption h3, .page_videos .item .caption p, .page_videos .item .caption span {
@@ -972,7 +984,8 @@ footer {
       color: #000;
       margin: 0 0 10px 0; }
     #loaddata ._item_ .text span {
-      font-size: 16px; }
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif; }
       #loaddata ._item_ .text span span.date {
         font-style: italic; }
   #loaddata ._item_:last-child {
