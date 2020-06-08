@@ -672,7 +672,8 @@ footer {
     height: 100%; }
   .page_videos .item._style_1._small_ span {
     font-size: 18px;
-    color: #01c3ff; }
+    color: #01c3ff;
+    font-family: 'Roboto', sans-serif; }
     .page_videos .item._style_1._small_ span span.date {
       color: #000;
       font-size: 15px;
@@ -713,7 +714,8 @@ footer {
     color: #636363;
     margin: 0 0 10px 0; }
   .page_videos .item span {
-    font-size: 14px; }
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; }
     .page_videos .item span span.date {
       font-style: italic; }
 
@@ -1022,13 +1024,27 @@ section.banner_ads img {
   width: 100%; }
 
 .box_login_register_ {
-  background: #fff; }
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101; }
+  .box_login_register_ .close-register {
+    margin: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer; }
+  .box_login_register_ .row {
+    height: 100%; }
   .box_login_register_ ul.nav {
     background: #fafafa;
     width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0 0 20px 0; }
     .box_login_register_ ul.nav li {
       font-size: 25px;
       padding: 0 50px; }
@@ -1056,7 +1072,16 @@ section.banner_ads img {
       font-size: 16px;
       width: 100%;
       margin: 0 0 20px 0;
-      height: 50px; }
+      height: 50px;
+      font-family: 'Roboto', sans-serif; }
+      .box_login_register_ .tab-content .form_text::-webkit-input-placeholder {
+        font-family: 'Roboto', sans-serif; }
+      .box_login_register_ .tab-content .form_text:-ms-input-placeholder {
+        font-family: 'Roboto', sans-serif; }
+      .box_login_register_ .tab-content .form_text::-ms-input-placeholder {
+        font-family: 'Roboto', sans-serif; }
+      .box_login_register_ .tab-content .form_text::placeholder {
+        font-family: 'Roboto', sans-serif; }
     .box_login_register_ .tab-content .remember_pass {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1064,9 +1089,12 @@ section.banner_ads img {
       display: -webkit-flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      font-family: 'Roboto', sans-serif; }
       .box_login_register_ .tab-content .remember_pass input {
         margin: 0 5px 0 0; }
+    .box_login_register_ .tab-content .forget_pass {
+      font-family: 'Roboto', sans-serif; }
     .box_login_register_ .tab-content .bottom_ {
       margin: 20px 0 0 0; }
       .box_login_register_ .tab-content .bottom_ #login_fb {

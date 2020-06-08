@@ -666,6 +666,7 @@ footer
         span
           font-size: 18px
           color: #01c3ff
+          font-family: 'Roboto', sans-serif
           span.date
             color: #000
             font-size: 15px
@@ -707,6 +708,7 @@ footer
      margin: 0 0 10px 0
     span
       font-size: 14px
+      font-family: 'Roboto', sans-serif
       span.date
         font-style: italic
   .main_videos  
@@ -1008,10 +1010,24 @@ section.banner_ads
     width: 100%
 .box_login_register_
   background: #fff
+  height: 100vh
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 101
+  .close-register
+    margin: 30px
+    position: absolute
+    right: 0
+    top: 0
+    cursor: pointer
+  .row
+    height: 100%
   ul.nav
     background: #fafafa
     width: 100%
     justify-content: center
+    margin: 0 0 20px 0
     li
       font-size: 25px
       padding: 0 50px
@@ -1040,12 +1056,18 @@ section.banner_ads
       width: 100%
       margin: 0 0 20px 0
       height: 50px
+      font-family: 'Roboto', sans-serif
+      &::placeholder
+        font-family: 'Roboto', sans-serif
     .remember_pass
       display: flex
       display: -webkit-flex
       align-items: center
+      font-family: 'Roboto', sans-serif
       input
         margin: 0 5px 0 0
+    .forget_pass
+      font-family: 'Roboto', sans-serif
     .bottom_
       margin: 20px 0 0 0
       #login_fb
