@@ -1582,6 +1582,11 @@ section.banner_ads img {
       z-index: 0; }
   #main-trending .item .children {
     margin: 0 0 20px 0; }
+    #main-trending .item .children .img {
+      height: 62px; }
+      #main-trending .item .children .img img {
+        height: 100%; }
+    
   #main-trending .item .cate {
     font-family: 'Roboto', sans-serif;
     display: -webkit-box;
